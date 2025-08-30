@@ -16,7 +16,8 @@
     <div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Skills</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -32,7 +33,8 @@
       </div>
       <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Work Experience</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
@@ -66,6 +68,35 @@
   </section>
 
   <section id="experience">
+    <p class="section__text__p1">My Professional</p>
+    <h1 class="title">Work Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">CoGuide</h2>
+          <h3 class="experience-duration">April 2024 – Present</h3>
+          <div class="experience-description">
+            <p>• Built advanced data collection system with 20+ field types, validation rules, conditional logic,
+              autofill, and multilingual speech-to-text deployed in ongoing diabetes research actively collecting 1
+              crore+ records across pan India.</p>
+            <p>• Developed project dashboard adopted by Karnataka Brain Health Initiative (NIMHANS & Govt. of Karnataka)
+              with real-time analytics and progress monitoring.</p>
+            <p>• Integrated e-learning module with interactive content, quizzes, and automated certificate generation
+              with digital badges, supporting 1000+ learners across research programs.</p>
+            <p>• Created AI assistant with chatbot interface, global state management, and contextual support for
+              research modules, reducing user query resolution time by 60%.</p>
+            <p>• Led planner module with hierarchical tasks, milestones, resource allocation, and interactive Gantt
+              charts (D3.js), managing 100+ concurrent research projects.</p>
+            <p>• Migrated company website from WordPress to React (coguide.in), delivering 40% faster load times,
+              improved SEO rankings, mobile responsiveness, and a cleaner UI that boosted user engagement by 25%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+  </section>
+
+  <section id="skills">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Skills</h1>
     <div class="experience-details-container">
@@ -94,13 +125,19 @@
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
+                <h3>TypeScript</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
                 <h3>Bootstrap</h3>
               </div>
             </article>
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3>Tailwind Css</h3>
+                <h3>Tailwind CSS</h3>
               </div>
             </article>
             <article>
@@ -129,7 +166,19 @@
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3>Mongo DB</h3>
+                <h3>MongoDB</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
               </div>
             </article>
             <article>
@@ -140,10 +189,52 @@
             </article>
           </div>
         </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tools & Cloud</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Docker</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>AWS (EC2, S3, Lambda)</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Redis</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Socket.io</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Firebase</h3>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
   </section>
+
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
@@ -151,19 +242,53 @@
       <div class="about-containers">
         <div class="details-container color-container">
           <div class="article-container">
+            <img src="./assets/chat-agent.png" alt="Chat Agent Project" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Chat-Agent</h2>
+          <h3 class="projecth3">Tech stack: React.js, Express.js, MongoDB, ChromaDB, Llama 3, Ollama</h3>
+          <!-- <p class="project-description">AI-powered platform for businesses to create custom chatbots trained on their data sources using RAG with ChromaDB and Llama 3. Features 7-module system including agent playground, analytics, multi-source data management, and dynamic action triggers.</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/R0HAN44/chat-agent')">
+              Github
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('#')">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/discord-pic.png" alt="Discord Clone Project" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Discord Clone</h2>
+          <h3 class="projecth3">Tech stack: React.js, Express.js, PostgreSQL, Socket.io, Prisma</h3>
+          <!-- <p class="project-description">Full-stack real-time communication platform with WebSocket messaging,
+            voice/video channels, JWT authentication, and role-based permissions. Features comprehensive server
+            management system with channel organization, invite system, direct messaging, and file sharing.</p> -->
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/R0HAN44/discord')">
+              Github
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('#')">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
             <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">Ecommerce App</h2>
-          <h3 class="projecth3">Tech stack : ReactJs, Node JS, Express, Mongo DB</h3>
+          <h3 class="projecth3">Tech stack: ReactJs, Node JS, Express, Mongo DB</h3>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://github.com/R0HAN44/FullStack-Ecommerce-App')">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn"
+            <!-- <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://fullstack-ecommerce-app-r02r.onrender.com/')">
               Live Demo
-            </button>
+            </button> -->
           </div>
         </div>
         <div class="details-container color-container">
@@ -171,16 +296,16 @@
             <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">Realtime Chat-App</h2>
-          <h3 class="projecth3">Tech stack : ReactJs, Node JS, Express, Mongo DB, Socket.io</h3>
+          <h3 class="projecth3">Tech stack: ReactJs, Node JS, Express, Mongo DB, Socket.io</h3>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://github.com/R0HAN44/Fullstack-Chat-App')">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn"
+            <!-- <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://fullstack-chat-app-eq7p.onrender.com/')">
               Live Demo
-            </button>
+            </button> -->
           </div>
         </div>
         <div class="details-container color-container">
@@ -188,14 +313,14 @@
             <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">CodeStudio - Online IDE</h2>
-          <h3 class="projecth3">Tech stack : HTML, CSS, JavaScript</h3>
+          <h3 class="projecth3">Tech stack: HTML, CSS, JavaScript</h3>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/R0HAN44/Online_IDE')">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="window.open('https://r0han44.github.io/Online_IDE/')">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://r0han44.github.io/Online_IDE/')">
               Live Demo
-            </button>
+            </button> -->
           </div>
         </div>
         <div class="details-container color-container">
@@ -203,16 +328,16 @@
             <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">Amazon Clone</h2>
-          <h3 class="projecth3">Tech stack : ReactJs, Tailwind CSS, Redux Toolkit, Firebase </h3>
+          <h3 class="projecth3">Tech stack: ReactJs, Tailwind CSS, Redux Toolkit, Firebase</h3>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://github.com/R0HAN44/Ecommerce-app')">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn"
+            <!-- <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://ecommerce-mxh5wg2i9-rohanj0306-gmailcom.vercel.app/')">
               Live Demo
-            </button>
+            </button> -->
           </div>
         </div>
         <div class="details-container color-container">
@@ -220,15 +345,15 @@
             <img src="./assets/project-5.png" alt="Project 5" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">LinkedIn Clone</h2>
-          <h3 class="projecth3">Tech stack : ReactJs, Redux Toolkit, Firebase</h3>
+          <h3 class="projecth3">Tech stack: ReactJs, Redux Toolkit, Firebase</h3>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://github.com/R0HAN44/linkedin-clone')">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="window.open('https://linkedin-clone-6dede.web.app/')">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://linkedin-clone-6dede.web.app/')">
               Live Demo
-            </button>
+            </button> -->
           </div>
         </div>
         <div class="details-container color-container">
@@ -236,22 +361,23 @@
             <img src="./assets/project-6.png" alt="Project 6" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">JavaScript Projects</h2>
-          <h3 class="projecth3">Tech stack : HTML, CSS, JavaScript</h3>
+          <h3 class="projecth3">Tech stack: HTML, CSS, JavaScript</h3>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://github.com/R0HAN44/Javascript-Projects')">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn"
+            <!-- <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://r0han44.github.io/Javascript-Projects/')">
               Live Demo
-            </button>
+            </button> -->
           </div>
         </div>
       </div>
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'" />
   </section>
+
   <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
@@ -309,13 +435,14 @@
       <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
+          <li><a href="#experience">Work Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <p>Copyright &#169; 2023 Rohan J. All Rights Reserved.</p>
+    <p>Copyright &#169; 2024 Rohan J. All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
 </body>
